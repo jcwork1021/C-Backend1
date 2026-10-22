@@ -1,0 +1,45 @@
+2026-10-22T07:09:42.3849278+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.5.1+0bf77e3aedbf86f1fa16220bc951d3b52ba56763
+2026-10-22T07:09:42.3857833+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-10-22T07:09:42.3867640+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-10-22T07:09:42.3867665+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 07:09:42.361
+2026-10-22T07:09:42.3870909+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 12736
+2026-10-22T07:09:42.3871117+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.18
+2026-10-22T07:09:42.3871268+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.18\System.Private.CoreLib.dll
+2026-10-22T07:09:42.3871330+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-10-22T07:09:42.3871717+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\minimalAPILesson1.Tests.dll
+2026-10-22T07:09:42.3871764+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\Log --results-directory C:\Users\User\Desktop\C#Backend1\minimalAPILesson1\TestResults --client-port 50127'
+2026-10-22T07:09:42.3882301+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-10-22T07:09:42.4249423+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-10-22T07:09:42.4311264+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-10-22T07:09:42.6039440+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '4.0.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-10-22T07:09:42.6108412+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 9.0.18)
+2026-10-22T07:09:42.6492313+00:00 xUnit.net INFORMATION   Discovering: minimalAPILesson1.Tests
+2026-10-22T07:09:42.6810479+00:00 xUnit.net INFORMATION   Discovered:  minimalAPILesson1.Tests
+2026-10-22T07:09:42.6953213+00:00 xUnit.net INFORMATION   Starting:    minimalAPILesson1.Tests
+2026-10-22T07:09:42.8157575+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.GetAllPlayers_ReturnsSuccessStatusCode [FAIL]
+2026-10-22T07:09:42.8160260+00:00 xUnit.net INFORMATION       System.InvalidOperationException : Can't find 'C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\testhost.deps.json'. This file is required for functional tests to run properly. There should be a copy of the file on your source project bin folder. If that is not the case, make sure that the property PreserveCompilationContext is set to true on your project file. E.g '<PreserveCompilationContext>true</PreserveCompilationContext>'. For functional tests to work they need to either run from the build output folder or the testhost.deps.json file from your application's output directory must be copied to the folder where the tests are running on. A common cause for this error is having shadow copying enabled when the tests run.
+2026-10-22T07:09:42.8162599+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-22T07:09:42.8166922+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()
+2026-10-22T07:09:42.8167040+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()
+2026-10-22T07:09:42.8167143+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+2026-10-22T07:09:42.8167224+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+2026-10-22T07:09:42.8167301+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+2026-10-22T07:09:42.8167350+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+2026-10-22T07:09:42.8167991+00:00 xUnit.net INFORMATION         C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(16,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests..ctor(WebApplicationFactory`1 factory)
+2026-10-22T07:09:42.8168080+00:00 xUnit.net INFORMATION            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+2026-10-22T07:09:42.8168151+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+2026-10-22T07:09:42.8192597+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.CreatePlayer_WithValidData_ReturnsOk [FAIL]
+2026-10-22T07:09:42.8192727+00:00 xUnit.net INFORMATION       System.InvalidOperationException : Can't find 'C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\testhost.deps.json'. This file is required for functional tests to run properly. There should be a copy of the file on your source project bin folder. If that is not the case, make sure that the property PreserveCompilationContext is set to true on your project file. E.g '<PreserveCompilationContext>true</PreserveCompilationContext>'. For functional tests to work they need to either run from the build output folder or the testhost.deps.json file from your application's output directory must be copied to the folder where the tests are running on. A common cause for this error is having shadow copying enabled when the tests run.
+2026-10-22T07:09:42.8193029+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-22T07:09:42.8193167+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()
+2026-10-22T07:09:42.8193220+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()
+2026-10-22T07:09:42.8193290+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+2026-10-22T07:09:42.8193370+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+2026-10-22T07:09:42.8193440+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+2026-10-22T07:09:42.8193491+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+2026-10-22T07:09:42.8193626+00:00 xUnit.net INFORMATION         C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(16,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests..ctor(WebApplicationFactory`1 factory)
+2026-10-22T07:09:42.8193673+00:00 xUnit.net INFORMATION            at InvokeStub_PlayerIntegrationTests..ctor(Object, Span`1)
+2026-10-22T07:09:42.8193754+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2026-10-22T07:09:43.2425963+00:00 xUnit.net INFORMATION   Finished:    minimalAPILesson1.Tests (ID = '5d7fa80175167fdcba2ed8d3862f61482a744bfb61c7e31a2b17d6e810a6f0a5')
+2026-10-22T07:09:43.2461232+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-10-22T07:09:43.2500809+00:00 xUnit.net INFORMATION    minimalAPILesson1.Tests  Total: 4, Errors: 0, Failed: 2, Skipped: 0, Not Run: 0, Time: 0.550s

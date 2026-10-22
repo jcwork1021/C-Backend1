@@ -1,0 +1,27 @@
+2026-10-22T08:10:51.1478744+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.5.1+0bf77e3aedbf86f1fa16220bc951d3b52ba56763
+2026-10-22T08:10:51.1486434+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-10-22T08:10:51.1495056+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-10-22T08:10:51.1495077+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 08:10:51.127
+2026-10-22T08:10:51.1498106+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 14232
+2026-10-22T08:10:51.1498293+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.18
+2026-10-22T08:10:51.1498371+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.18\System.Private.CoreLib.dll
+2026-10-22T08:10:51.1498419+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-10-22T08:10:51.1498778+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\minimalAPILesson1.Tests.dll
+2026-10-22T08:10:51.1498813+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\Log --results-directory C:\Users\User\Desktop\C#Backend1\minimalAPILesson1\TestResults --client-port 62085'
+2026-10-22T08:10:51.1509074+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-10-22T08:10:51.1827459+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-10-22T08:10:51.1884267+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-10-22T08:10:51.3333959+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '4.0.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-10-22T08:10:51.3397529+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 9.0.18)
+2026-10-22T08:10:51.3735501+00:00 xUnit.net INFORMATION   Discovering: minimalAPILesson1.Tests
+2026-10-22T08:10:51.3984704+00:00 xUnit.net INFORMATION   Discovered:  minimalAPILesson1.Tests
+2026-10-22T08:10:51.4085956+00:00 xUnit.net INFORMATION   Starting:    minimalAPILesson1.Tests
+2026-10-22T08:10:52.3041009+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.CreatePlayer_WithValidData_ReturnsOk [FAIL]
+2026-10-22T08:10:52.3043467+00:00 xUnit.net INFORMATION       System.Net.Http.HttpRequestException : Response status code does not indicate success: 409 (Conflict).
+2026-10-22T08:10:52.3045552+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-22T08:10:52.3047565+00:00 xUnit.net INFORMATION            at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+2026-10-22T08:10:52.3047730+00:00 xUnit.net INFORMATION         C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(63,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.CreatePlayer_WithValidData_ReturnsOk()
+2026-10-22T08:10:52.3047745+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-22T08:10:52.3207280+00:00 xUnit.net INFORMATION   Finished:    minimalAPILesson1.Tests (ID = '5d7fa80175167fdcba2ed8d3862f61482a744bfb61c7e31a2b17d6e810a6f0a5')
+2026-10-22T08:10:52.3237113+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-10-22T08:10:52.3270607+00:00 xUnit.net INFORMATION    minimalAPILesson1.Tests  Total: 1, Errors: 0, Failed: 1, Skipped: 0, Not Run: 0, Time: 0.914s

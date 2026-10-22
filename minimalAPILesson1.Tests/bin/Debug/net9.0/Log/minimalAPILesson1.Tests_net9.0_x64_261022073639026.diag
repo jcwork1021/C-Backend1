@@ -1,0 +1,60 @@
+2026-10-22T07:36:39.0321414+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.5.1+0bf77e3aedbf86f1fa16220bc951d3b52ba56763
+2026-10-22T07:36:39.0329516+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-10-22T07:36:39.0339319+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-10-22T07:36:39.0339343+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 07:36:39.009
+2026-10-22T07:36:39.0342842+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 4100
+2026-10-22T07:36:39.0343034+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.18
+2026-10-22T07:36:39.0343160+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.18\System.Private.CoreLib.dll
+2026-10-22T07:36:39.0343219+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-10-22T07:36:39.0343602+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\minimalAPILesson1.Tests.dll
+2026-10-22T07:36:39.0343636+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\Log --results-directory C:\Users\User\Desktop\C#Backend1\minimalAPILesson1\TestResults --client-port 52772'
+2026-10-22T07:36:39.0354058+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-10-22T07:36:39.0728438+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-10-22T07:36:39.0790979+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-10-22T07:36:39.2410591+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '4.0.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-10-22T07:36:39.2506472+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 9.0.18)
+2026-10-22T07:36:39.2926802+00:00 xUnit.net INFORMATION   Discovering: minimalAPILesson1.Tests
+2026-10-22T07:36:39.3272304+00:00 xUnit.net INFORMATION   Discovered:  minimalAPILesson1.Tests
+2026-10-22T07:36:39.3385028+00:00 xUnit.net INFORMATION   Starting:    minimalAPILesson1.Tests
+2026-10-22T07:36:39.5437008+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.GetAllPlayers_ReturnsSuccessStatusCode [FAIL]
+2026-10-22T07:36:39.5439565+00:00 xUnit.net INFORMATION       System.Reflection.ReflectionTypeLoadException : Unable to load one or more of the requested types.
+2026-10-22T07:36:39.5439647+00:00 xUnit.net INFORMATION       Could not load file or assembly 'Microsoft.EntityFrameworkCore.Relational, Version=9.0.15.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. The system cannot find the file specified.
+2026-10-22T07:36:39.5439654+00:00 xUnit.net INFORMATION       Could not load file or assembly 'Microsoft.EntityFrameworkCore.Relational, Version=9.0.15.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. The system cannot find the file specified.
+2026-10-22T07:36:39.5439661+00:00 xUnit.net INFORMATION       Could not load file or assembly 'Microsoft.EntityFrameworkCore.Relational, Version=9.0.15.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. The system cannot find the file specified.
+2026-10-22T07:36:39.5439667+00:00 xUnit.net INFORMATION       Could not load file or assembly 'Microsoft.EntityFrameworkCore.Relational, Version=9.0.15.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. The system cannot find the file specified.
+2026-10-22T07:36:39.5439672+00:00 xUnit.net INFORMATION       Could not load file or assembly 'Microsoft.EntityFrameworkCore.Relational, Version=9.0.15.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. The system cannot find the file specified.
+2026-10-22T07:36:39.5439724+00:00 xUnit.net INFORMATION       Could not load file or assembly 'Microsoft.EntityFrameworkCore.Relational, Version=9.0.15.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. The system cannot find the file specified.
+2026-10-22T07:36:39.5441921+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-22T07:36:39.5444470+00:00 xUnit.net INFORMATION            at System.Reflection.RuntimeModule.GetDefinedTypes()
+2026-10-22T07:36:39.5444598+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Controllers.ControllerFeatureProvider.PopulateFeature(IEnumerable`1 parts, ControllerFeature feature)
+2026-10-22T07:36:39.5444644+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager.PopulateFeature[TFeature](TFeature feature)
+2026-10-22T07:36:39.5444682+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetControllerTypes()
+2026-10-22T07:36:39.5444718+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+2026-10-22T07:36:39.5444873+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+2026-10-22T07:36:39.5444911+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+2026-10-22T07:36:39.5444946+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+2026-10-22T07:36:39.5444983+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+2026-10-22T07:36:39.5445036+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.Primitives.ChangeToken.ChangeTokenRegistration`1..ctor(Func`1 changeTokenProducer, Action`1 changeTokenConsumer, TState state)
+2026-10-22T07:36:39.5445077+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+2026-10-22T07:36:39.5445106+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+2026-10-22T07:36:39.5445150+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+2026-10-22T07:36:39.5445193+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+2026-10-22T07:36:39.5445282+00:00 xUnit.net INFORMATION         C:\Users\User\Desktop\C#Backend1\minimalAPILesson1\Program.cs(70,0): at Program.<Main>$(String[] args)
+2026-10-22T07:36:39.5445381+00:00 xUnit.net INFORMATION            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+2026-10-22T07:36:39.5445425+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+2026-10-22T07:36:39.5445431+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-22T07:36:39.5445473+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.DeferredHostBuilder.DeferredHost.StartAsync(CancellationToken cancellationToken)
+2026-10-22T07:36:39.5445505+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Start(IHost host)
+2026-10-22T07:36:39.5445538+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+2026-10-22T07:36:39.5445575+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+2026-10-22T07:36:39.5445603+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()
+2026-10-22T07:36:39.5445641+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+2026-10-22T07:36:39.5445685+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+2026-10-22T07:36:39.5445725+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+2026-10-22T07:36:39.5445787+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+2026-10-22T07:36:39.5445839+00:00 xUnit.net INFORMATION         C:\Users\User\Desktop\C#Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(16,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests..ctor(WebApplicationFactory`1 factory)
+2026-10-22T07:36:39.5445886+00:00 xUnit.net INFORMATION            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+2026-10-22T07:36:39.5445932+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+2026-10-22T07:36:39.5547348+00:00 xUnit.net INFORMATION   Finished:    minimalAPILesson1.Tests (ID = '5d7fa80175167fdcba2ed8d3862f61482a744bfb61c7e31a2b17d6e810a6f0a5')
+2026-10-22T07:36:39.5579833+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-10-22T07:36:39.5615279+00:00 xUnit.net INFORMATION    minimalAPILesson1.Tests  Total: 1, Errors: 0, Failed: 1, Skipped: 0, Not Run: 0, Time: 0.218s
