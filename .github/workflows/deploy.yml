@@ -8,10 +8,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     
-    # This automatically sets the folder for all steps below
     defaults:
       run:
-        working-directory: ./minimalAPIlesson1
+        working-directory: minimalAPIlesson1
 
     steps:
     - uses: actions/checkout@v4
