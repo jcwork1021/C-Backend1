@@ -92,12 +92,14 @@ namespace minimalAPILesson1.Controllers
             {
                 return BadRequest(ModelState);
             }
+            /*
 
             var existingPlayer = _context.Players.FirstOrDefault(p => p.Email == newPlayer.Email);
             if (existingPlayer != null)
             {
                 return Conflict("A player with the same email already exists.");
             }
+            */
 
             //Password hashing first
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(newPlayer.Password);

@@ -51,8 +51,8 @@ namespace minimalAPILesson1.Tests.IntegrationTests
             // 1. Arrange: Create the object you want to send
             var newPlayer = new Player
             {
-                Name = "TestHero2",
-                Email = "hero@test2.com",
+                Name = "TestHero25",
+                Email = "hero@test25.com",
                 Password = "SecurePassword123"
             };
 
