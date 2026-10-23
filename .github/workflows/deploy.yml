@@ -27,7 +27,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Test with xUnit
-      run: dotnet test ../minimalAPILesson1.Tests/minimalAPILesson1.Tests.csproj --no-build --verbosity normal
+      run: dotnet test minimalAPILesson1.Tests/minimalAPILesson1.Tests.csproj --configuration Release --no-build --verbosity normal
 
     - name: Publish application
       run: dotnet publish -c Release -o ./publish
