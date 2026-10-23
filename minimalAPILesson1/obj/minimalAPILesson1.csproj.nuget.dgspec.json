@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1\\minimalAPILesson1.csproj": {}
+    "D:\\Github\\C-Backend1\\minimalAPILesson1\\minimalAPILesson1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1\\minimalAPILesson1.csproj": {
+    "D:\\Github\\C-Backend1\\minimalAPILesson1\\minimalAPILesson1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1\\minimalAPILesson1.csproj",
+        "projectUniqueName": "D:\\Github\\C-Backend1\\minimalAPILesson1\\minimalAPILesson1.csproj",
         "projectName": "minimalAPILesson1",
-        "projectPath": "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1\\minimalAPILesson1.csproj",
+        "projectPath": "D:\\Github\\C-Backend1\\minimalAPILesson1\\minimalAPILesson1.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1\\obj\\",
+        "outputPath": "D:\\Github\\C-Backend1\\minimalAPILesson1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
