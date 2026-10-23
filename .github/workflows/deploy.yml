@@ -8,6 +8,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     
+    defaults:
+      run:
+        working-directory: minimalAPILesson1
+
     steps:
     - uses: actions/checkout@v4
 
@@ -17,20 +21,20 @@ jobs:
         dotnet-version: '9.0.316'
 
     - name: Restore dependencies
-      run: dotnet restore minimalAPIlesson1/minimalAPIlesson1.csproj
+      run: dotnet restore
 
     - name: Build with dotnet
-      run: dotnet build minimalAPIlesson1/minimalAPIlesson1.csproj --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore
 
     - name: Test with xUnit
-      run: dotnet test minimalAPIlesson1.Tests/minimalAPIlesson1.Tests.csproj --no-build --verbosity normal
+      run: dotnet test ../minimalAPILesson1.Tests/minimalAPILesson1.Tests.csproj --no-build --verbosity normal
 
     - name: Publish application
-      run: dotnet publish minimalAPIlesson1/minimalAPIlesson1.csproj -c Release -o ./publish
+      run: dotnet publish -c Release -o ./publish
 
     - name: Deploy to Azure App Service
       uses: azure/webapps-deploy@v3
       with:
         app-name: 'cbackend1'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        package: './publish'
+        package: './minimalAPILesson1/publish'
