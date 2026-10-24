@@ -208,14 +208,10 @@ app.MapDelete("/api/player/MapDeletePlayer/{playerID}", async (AppDBContext cont
 });
 
 
-// Automatically apply pending EF Core migrations on startup (skipped during integration tests)
-if (!app.Environment.IsEnvironment("Testing"))
+using (var scope = app.Services.CreateScope())
 {
-    using (var scope = app.Services.CreateScope())
-    {
-        var dbContext = scope.ServiceProvider.GetRequiredService<AppDBContext>();
-        dbContext.Database.Migrate();
-    }
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDBContext>();
+    dbContext.Database.Migrate();
 }
 
 app.Run();
