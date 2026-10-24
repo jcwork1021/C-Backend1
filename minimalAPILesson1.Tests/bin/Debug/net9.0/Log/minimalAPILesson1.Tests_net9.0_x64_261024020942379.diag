@@ -1,0 +1,105 @@
+2026-10-24T02:09:42.3847370+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.5.1+0bf77e3aedbf86f1fa16220bc951d3b52ba56763
+2026-10-24T02:09:42.3855091+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-10-24T02:09:42.3863659+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-10-24T02:09:42.3863678+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 02:09:42.363
+2026-10-24T02:09:42.3866654+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 22168
+2026-10-24T02:09:42.3866817+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.18
+2026-10-24T02:09:42.3866939+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.18\System.Private.CoreLib.dll
+2026-10-24T02:09:42.3866993+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-10-24T02:09:42.3867358+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: D:\Github\C-Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\minimalAPILesson1.Tests.dll
+2026-10-24T02:09:42.3867396+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory D:\Github\C-Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\Log --results-directory D:\Github\C-Backend1\minimalAPILesson1\TestResults --client-port 54813'
+2026-10-24T02:09:42.3877088+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-10-24T02:09:42.4200287+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-10-24T02:09:42.4257544+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-10-24T02:09:42.5717632+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '4.0.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-10-24T02:09:42.5784578+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 9.0.18)
+2026-10-24T02:09:42.6101474+00:00 xUnit.net INFORMATION   Discovering: minimalAPILesson1.Tests
+2026-10-24T02:09:42.6351863+00:00 xUnit.net INFORMATION   Discovered:  minimalAPILesson1.Tests
+2026-10-24T02:09:42.6454375+00:00 xUnit.net INFORMATION   Starting:    minimalAPILesson1.Tests
+2026-10-24T02:09:43.0125962+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.GetAllPlayers_WithoutToken_ReturnsUnauthorized [FAIL]
+2026-10-24T02:09:43.0128596+00:00 xUnit.net INFORMATION       System.InvalidOperationException : Services for database providers 'Microsoft.EntityFrameworkCore.SqlServer', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+2026-10-24T02:09:43.0130913+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-24T02:09:43.0133357+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+2026-10-24T02:09:43.0133461+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+2026-10-24T02:09:43.0133492+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2026-10-24T02:09:43.0133541+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2026-10-24T02:09:43.0133617+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+2026-10-24T02:09:43.0133661+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+2026-10-24T02:09:43.0133702+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+2026-10-24T02:09:43.0133739+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.IsRelational(DatabaseFacade databaseFacade)
+2026-10-24T02:09:43.0133821+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1\Program.cs(217,0): at Program.<Main>$(String[] args)
+2026-10-24T02:09:43.0133864+00:00 xUnit.net INFORMATION            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+2026-10-24T02:09:43.0133906+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+2026-10-24T02:09:43.0133978+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T02:09:43.0134020+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.DeferredHostBuilder.DeferredHost.StartAsync(CancellationToken cancellationToken)
+2026-10-24T02:09:43.0134051+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Start(IHost host)
+2026-10-24T02:09:43.0134086+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+2026-10-24T02:09:43.0134128+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.DelegatedWebApplicationFactory.CreateHost(IHostBuilder builder)
+2026-10-24T02:09:43.0134163+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+2026-10-24T02:09:43.0134238+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()
+2026-10-24T02:09:43.0134276+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+2026-10-24T02:09:43.0134318+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+2026-10-24T02:09:43.0134356+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+2026-10-24T02:09:43.0134381+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+2026-10-24T02:09:43.0134431+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(18,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests..ctor(WebApplicationFactory`1 factory)
+2026-10-24T02:09:43.0134471+00:00 xUnit.net INFORMATION            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+2026-10-24T02:09:43.0134512+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+2026-10-24T02:09:43.0322068+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.CreatePlayer_WithValidData_ReturnsOk [FAIL]
+2026-10-24T02:09:43.0322176+00:00 xUnit.net INFORMATION       System.InvalidOperationException : Services for database providers 'Microsoft.EntityFrameworkCore.SqlServer', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+2026-10-24T02:09:43.0322404+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-24T02:09:43.0322551+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+2026-10-24T02:09:43.0322585+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+2026-10-24T02:09:43.0322618+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2026-10-24T02:09:43.0322678+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2026-10-24T02:09:43.0322736+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+2026-10-24T02:09:43.0322790+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+2026-10-24T02:09:43.0322865+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+2026-10-24T02:09:43.0322912+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.IsRelational(DatabaseFacade databaseFacade)
+2026-10-24T02:09:43.0323033+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1\Program.cs(217,0): at Program.<Main>$(String[] args)
+2026-10-24T02:09:43.0323059+00:00 xUnit.net INFORMATION            at InvokeStub_Program.<Main>$(Object, Span`1)
+2026-10-24T02:09:43.0323121+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2026-10-24T02:09:43.0323129+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T02:09:43.0323180+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.DeferredHostBuilder.DeferredHost.StartAsync(CancellationToken cancellationToken)
+2026-10-24T02:09:43.0323216+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Start(IHost host)
+2026-10-24T02:09:43.0323256+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+2026-10-24T02:09:43.0323308+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.DelegatedWebApplicationFactory.CreateHost(IHostBuilder builder)
+2026-10-24T02:09:43.0323353+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+2026-10-24T02:09:43.0323387+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()
+2026-10-24T02:09:43.0323434+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+2026-10-24T02:09:43.0323539+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+2026-10-24T02:09:43.0323590+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+2026-10-24T02:09:43.0323623+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+2026-10-24T02:09:43.0323677+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(18,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests..ctor(WebApplicationFactory`1 factory)
+2026-10-24T02:09:43.0323707+00:00 xUnit.net INFORMATION            at InvokeStub_PlayerIntegrationTests..ctor(Object, Span`1)
+2026-10-24T02:09:43.0323769+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2026-10-24T02:09:43.0395738+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.GetAllPlayers_WithGeneratedToken_ReturnsSuccessStatusCode [FAIL]
+2026-10-24T02:09:43.0395905+00:00 xUnit.net INFORMATION       System.InvalidOperationException : Services for database providers 'Microsoft.EntityFrameworkCore.SqlServer', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+2026-10-24T02:09:43.0396041+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-24T02:09:43.0396190+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+2026-10-24T02:09:43.0396225+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+2026-10-24T02:09:43.0396262+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2026-10-24T02:09:43.0396322+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2026-10-24T02:09:43.0396381+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+2026-10-24T02:09:43.0396436+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+2026-10-24T02:09:43.0396486+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+2026-10-24T02:09:43.0396533+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.IsRelational(DatabaseFacade databaseFacade)
+2026-10-24T02:09:43.0396633+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1\Program.cs(217,0): at Program.<Main>$(String[] args)
+2026-10-24T02:09:43.0396660+00:00 xUnit.net INFORMATION            at InvokeStub_Program.<Main>$(Object, Span`1)
+2026-10-24T02:09:43.0396724+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2026-10-24T02:09:43.0396732+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T02:09:43.0396782+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.DeferredHostBuilder.DeferredHost.StartAsync(CancellationToken cancellationToken)
+2026-10-24T02:09:43.0396819+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Start(IHost host)
+2026-10-24T02:09:43.0396860+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+2026-10-24T02:09:43.0396912+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.DelegatedWebApplicationFactory.CreateHost(IHostBuilder builder)
+2026-10-24T02:09:43.0396957+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+2026-10-24T02:09:43.0396990+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()
+2026-10-24T02:09:43.0397065+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+2026-10-24T02:09:43.0397117+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+2026-10-24T02:09:43.0397165+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+2026-10-24T02:09:43.0397198+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+2026-10-24T02:09:43.0397251+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(18,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests..ctor(WebApplicationFactory`1 factory)
+2026-10-24T02:09:43.0397280+00:00 xUnit.net INFORMATION            at InvokeStub_PlayerIntegrationTests..ctor(Object, Span`1)
+2026-10-24T02:09:43.0397341+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2026-10-24T02:09:43.0479930+00:00 xUnit.net INFORMATION   Finished:    minimalAPILesson1.Tests (ID = 'f7f6d0be300ebdb38034696c18f89bce92558e879f63540227b42dc9a4847d22')
+2026-10-24T02:09:43.0509300+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-10-24T02:09:43.0543311+00:00 xUnit.net INFORMATION    minimalAPILesson1.Tests  Total: 3, Errors: 0, Failed: 3, Skipped: 0, Not Run: 0, Time: 0.404s

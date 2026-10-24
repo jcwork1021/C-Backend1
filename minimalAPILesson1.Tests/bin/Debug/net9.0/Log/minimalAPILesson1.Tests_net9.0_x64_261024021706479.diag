@@ -1,0 +1,84 @@
+2026-10-24T02:17:06.4848791+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.5.1+0bf77e3aedbf86f1fa16220bc951d3b52ba56763
+2026-10-24T02:17:06.4856751+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-10-24T02:17:06.4865227+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-10-24T02:17:06.4865248+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 02:17:06.464
+2026-10-24T02:17:06.4868235+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 15088
+2026-10-24T02:17:06.4868395+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.18
+2026-10-24T02:17:06.4868478+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.18\System.Private.CoreLib.dll
+2026-10-24T02:17:06.4868534+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-10-24T02:17:06.4868899+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: D:\Github\C-Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\minimalAPILesson1.Tests.dll
+2026-10-24T02:17:06.4868935+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory D:\Github\C-Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\Log --results-directory D:\Github\C-Backend1\minimalAPILesson1\TestResults --client-port 51308'
+2026-10-24T02:17:06.4878632+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-10-24T02:17:06.5200669+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-10-24T02:17:06.5258752+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-10-24T02:17:06.6728829+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '4.0.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-10-24T02:17:06.6790875+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 9.0.18)
+2026-10-24T02:17:06.7104563+00:00 xUnit.net INFORMATION   Discovering: minimalAPILesson1.Tests
+2026-10-24T02:17:06.7362791+00:00 xUnit.net INFORMATION   Discovered:  minimalAPILesson1.Tests
+2026-10-24T02:17:06.7467670+00:00 xUnit.net INFORMATION   Starting:    minimalAPILesson1.Tests
+2026-10-24T02:17:07.4813806+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.CreatePlayer_WithValidData_ReturnsOk [FAIL]
+2026-10-24T02:17:07.4816179+00:00 xUnit.net INFORMATION       System.InvalidOperationException : Services for database providers 'Microsoft.EntityFrameworkCore.SqlServer', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+2026-10-24T02:17:07.4818731+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-24T02:17:07.4820935+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+2026-10-24T02:17:07.4821045+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+2026-10-24T02:17:07.4821076+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2026-10-24T02:17:07.4821103+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+2026-10-24T02:17:07.4821146+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+2026-10-24T02:17:07.4821181+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.EntryWithoutDetectChanges(TEntity entity)
+2026-10-24T02:17:07.4821228+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+2026-10-24T02:17:07.4821335+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1\Controllers\PlayerController.cs(108,0): at minimalAPILesson1.Controllers.PlayerController.CreatePlayer(Player newPlayer)
+2026-10-24T02:17:07.4821413+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+2026-10-24T02:17:07.4821475+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+2026-10-24T02:17:07.4821546+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2026-10-24T02:17:07.4821649+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+2026-10-24T02:17:07.4821701+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+2026-10-24T02:17:07.4821734+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+2026-10-24T02:17:07.4821749+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T02:17:07.4821817+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2026-10-24T02:17:07.4821865+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+2026-10-24T02:17:07.4821914+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+2026-10-24T02:17:07.4821954+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+2026-10-24T02:17:07.4821990+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+2026-10-24T02:17:07.4822037+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass23_0.<<SendAsync>g__RunRequestAsync|0>d.MoveNext()
+2026-10-24T02:17:07.4822045+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T02:17:07.4822086+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+2026-10-24T02:17:07.4822134+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.Handlers.CookieContainerHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+2026-10-24T02:17:07.4822182+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.Handlers.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+2026-10-24T02:17:07.4822280+00:00 xUnit.net INFORMATION            at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+2026-10-24T02:17:07.4822373+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(62,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.CreatePlayer_WithValidData_ReturnsOk()
+2026-10-24T02:17:07.4822426+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T02:17:07.5403450+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.GetAllPlayers_WithGeneratedToken_ReturnsSuccessStatusCode [FAIL]
+2026-10-24T02:17:07.5403638+00:00 xUnit.net INFORMATION       System.InvalidOperationException : Services for database providers 'Microsoft.EntityFrameworkCore.SqlServer', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+2026-10-24T02:17:07.5403908+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-24T02:17:07.5404042+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+2026-10-24T02:17:07.5404071+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+2026-10-24T02:17:07.5404093+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+2026-10-24T02:17:07.5404151+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+2026-10-24T02:17:07.5404177+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+2026-10-24T02:17:07.5404207+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+2026-10-24T02:17:07.5404290+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+2026-10-24T02:17:07.5404350+00:00 xUnit.net INFORMATION            at System.Linq.Queryable.Select[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+2026-10-24T02:17:07.5404452+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1\Controllers\PlayerController.cs(46,0): at minimalAPILesson1.Controllers.PlayerController.GetAllPlayers()
+2026-10-24T02:17:07.5404573+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+2026-10-24T02:17:07.5404636+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+2026-10-24T02:17:07.5404759+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2026-10-24T02:17:07.5404832+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+2026-10-24T02:17:07.5404889+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+2026-10-24T02:17:07.5404980+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+2026-10-24T02:17:07.5404992+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T02:17:07.5405087+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2026-10-24T02:17:07.5405162+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+2026-10-24T02:17:07.5405235+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+2026-10-24T02:17:07.5405287+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+2026-10-24T02:17:07.5405337+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+2026-10-24T02:17:07.5405402+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass23_0.<<SendAsync>g__RunRequestAsync|0>d.MoveNext()
+2026-10-24T02:17:07.5405414+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T02:17:07.5405474+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+2026-10-24T02:17:07.5405541+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.Handlers.CookieContainerHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+2026-10-24T02:17:07.5405651+00:00 xUnit.net INFORMATION            at Microsoft.AspNetCore.Mvc.Testing.Handlers.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+2026-10-24T02:17:07.5405773+00:00 xUnit.net INFORMATION            at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+2026-10-24T02:17:07.5405879+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(93,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.GetAllPlayers_WithGeneratedToken_ReturnsSuccessStatusCode()
+2026-10-24T02:17:07.5405897+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T02:17:07.5522068+00:00 xUnit.net INFORMATION   Finished:    minimalAPILesson1.Tests (ID = 'f7f6d0be300ebdb38034696c18f89bce92558e879f63540227b42dc9a4847d22')
+2026-10-24T02:17:07.5551575+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-10-24T02:17:07.5584480+00:00 xUnit.net INFORMATION    minimalAPILesson1.Tests  Total: 3, Errors: 0, Failed: 2, Skipped: 0, Not Run: 0, Time: 0.808s

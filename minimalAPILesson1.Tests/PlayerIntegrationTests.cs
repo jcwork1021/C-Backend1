@@ -1,6 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using minimalAPILesson1.Data;
 using minimalAPILesson1.Models;
+using System;
 using System.Text;
 using System.Text.Json;
 
@@ -12,8 +16,30 @@ namespace minimalAPILesson1.Tests.IntegrationTests
 
         public PlayerIntegrationTests(WebApplicationFactory<Program> factory)
         {
-            // This spins up your actual API in memory!
-            _client = factory.CreateClient(); //NOTE: this method from WebApplicationFactory creates a real HttpClient that can send requests to your API endpoints.
+            _client = factory.WithWebHostBuilder(builder =>
+            {
+                builder.UseEnvironment("Testing");
+
+                builder.ConfigureServices(services =>
+                {
+                    // 1. Remove the real SQL Server DbContext registration coming from Program.cs
+                    var descriptors = services.Where(
+                        d => d.ServiceType == typeof(DbContextOptions<AppDBContext>) ||
+                             d.ServiceType == typeof(AppDBContext) ||
+                             d.ServiceType.FullName?.Contains("DbContextOptions") == true).ToList();
+
+                    foreach (var descriptor in descriptors)
+                    {
+                        services.Remove(descriptor);
+                    }
+
+                    // 2. Register InMemory cleanly using AppDBContext with a unique database name
+                    services.AddDbContext<AppDBContext>(options =>
+                    {
+                        options.UseInMemoryDatabase($"TestDb_{Guid.NewGuid()}");
+                    });
+                });
+            }).CreateClient();
         }
 
         [Fact]

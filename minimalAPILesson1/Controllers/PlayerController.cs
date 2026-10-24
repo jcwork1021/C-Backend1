@@ -45,6 +45,7 @@ namespace minimalAPILesson1.Controllers
 
             var players = await _context.Players.Select(p => new PlayerDTO(p.Id, p.Name, p.Email )).ToListAsync();
 
+            /*
             if (players == null || players.Count == 0)
             {
                 return NotFound(new ResponseDTO<List<PlayerDTO>>(
@@ -53,6 +54,7 @@ namespace minimalAPILesson1.Controllers
                     Data: null
                 ));
             }
+            */
 
             return Ok(new ResponseDTO<List<PlayerDTO>>(
                 Message: "Players retrieved successfully",
