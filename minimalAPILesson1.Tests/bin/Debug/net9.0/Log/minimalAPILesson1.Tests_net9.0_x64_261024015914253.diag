@@ -1,0 +1,21 @@
+2026-10-24T01:59:14.2661462+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.5.1+0bf77e3aedbf86f1fa16220bc951d3b52ba56763
+2026-10-24T01:59:14.2671925+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-10-24T01:59:14.2682038+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-10-24T01:59:14.2682061+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 01:59:14.231
+2026-10-24T01:59:14.2682477+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 9584
+2026-10-24T01:59:14.2682633+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.18
+2026-10-24T01:59:14.2682740+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.18\System.Private.CoreLib.dll
+2026-10-24T01:59:14.2682834+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-10-24T01:59:14.2683206+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: D:\Github\C-Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\minimalAPILesson1.Tests.dll
+2026-10-24T01:59:14.2683284+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory D:\Github\C-Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\Log --results-directory D:\Github\C-Backend1\minimalAPILesson1\TestResults --client-port 60255'
+2026-10-24T01:59:14.2715624+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-10-24T01:59:14.3060223+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-10-24T01:59:14.3122364+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-10-24T01:59:14.7007125+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '4.0.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-10-24T01:59:14.7082763+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 9.0.18)
+2026-10-24T01:59:14.7455596+00:00 xUnit.net INFORMATION   Discovering: minimalAPILesson1.Tests
+2026-10-24T01:59:14.7777408+00:00 xUnit.net INFORMATION   Discovered:  minimalAPILesson1.Tests
+2026-10-24T01:59:14.7925625+00:00 xUnit.net INFORMATION   Starting:    minimalAPILesson1.Tests
+2026-10-24T01:59:16.3971802+00:00 xUnit.net INFORMATION   Finished:    minimalAPILesson1.Tests (ID = 'f7f6d0be300ebdb38034696c18f89bce92558e879f63540227b42dc9a4847d22')
+2026-10-24T01:59:16.4019536+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-10-24T01:59:16.4060425+00:00 xUnit.net INFORMATION    minimalAPILesson1.Tests  Total: 1, Errors: 0, Failed: 0, Skipped: 0, Not Run: 0, Time: 1.607s

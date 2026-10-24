@@ -3,26 +3,30 @@
   "WorkspaceRootPath": "D:\\Github\\C-Backend1\\minimalAPILesson1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57A6E74A-6E2A-4332-BD0E-012594B3FC77}|..\\minimalAPILesson1.Tests\\minimalAPILesson1.Tests.csproj|d:\\github\\c-backend1\\minimalapilesson1.tests\\playerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57A6E74A-6E2A-4332-BD0E-012594B3FC77}|..\\minimalAPILesson1.Tests\\minimalAPILesson1.Tests.csproj|d:\\github\\c-backend1\\minimalapilesson1.tests\\playerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57A6E74A-6E2A-4332-BD0E-012594B3FC77}|..\\minimalAPILesson1.Tests\\minimalAPILesson1.Tests.csproj|d:\\github\\c-backend1\\minimalapilesson1.tests\\minimalapilesson1.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57A6E74A-6E2A-4332-BD0E-012594B3FC77}|..\\minimalAPILesson1.Tests\\minimalAPILesson1.Tests.csproj|d:\\github\\c-backend1\\minimalapilesson1.tests\\minimalapilesson1.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\migrations\\20261023025703_initialsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:migrations\\20261023025703_initialsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,20 +37,12 @@
       "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\minimalapilesson1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:minimalapilesson1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B3F967B-0562-FAD0-32ED-E7BBB5CF317E}|minimalAPILesson1.csproj|d:\\github\\c-backend1\\minimalapilesson1\\dto\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,34 +65,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Github\\C-Backend1\\minimalAPILesson1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-11T06:33:16.324Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1\\Controllers\\PlayerController.cs",
               "RelativeDocumentMoniker": "Controllers\\PlayerController.cs",
               "ToolTip": "D:\\Github\\C-Backend1\\minimalAPILesson1\\Controllers\\PlayerController.cs",
               "RelativeToolTip": "Controllers\\PlayerController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwGUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAGUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-14T02:47:31.5Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -105,19 +100,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerIntegrationTests.cs",
-              "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1.Tests\\PlayerIntegrationTests.cs",
-              "RelativeDocumentMoniker": "..\\minimalAPILesson1.Tests\\PlayerIntegrationTests.cs",
-              "ToolTip": "D:\\Github\\C-Backend1\\minimalAPILesson1.Tests\\PlayerIntegrationTests.cs",
-              "RelativeToolTip": "..\\minimalAPILesson1.Tests\\PlayerIntegrationTests.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAmwDYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T12:18:54.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "minimalAPILesson1.Tests",
               "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1.Tests\\minimalAPILesson1.Tests.csproj",
               "RelativeDocumentMoniker": "..\\minimalAPILesson1.Tests\\minimalAPILesson1.Tests.csproj",
@@ -125,62 +107,62 @@
               "RelativeToolTip": "..\\minimalAPILesson1.Tests\\minimalAPILesson1.Tests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-10-23T10:42:52.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20261023025703_InitialSetup.cs",
-              "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1\\Migrations\\20261023025703_InitialSetup.cs",
-              "RelativeDocumentMoniker": "Migrations\\20261023025703_InitialSetup.cs",
-              "ToolTip": "D:\\Github\\C-Backend1\\minimalAPILesson1\\Migrations\\20261023025703_InitialSetup.cs",
-              "RelativeToolTip": "Migrations\\20261023025703_InitialSetup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T02:57:22.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Github\\C-Backend1\\minimalAPILesson1\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-22T08:16:45.696Z",
+              "WhenOpened": "2026-10-24T01:56:48.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Github\\C-Backend1\\minimalAPILesson1\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-22T08:16:45.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
               "ToolTip": "D:\\Github\\C-Backend1\\minimalAPILesson1\\appsettings.Development.json",
               "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-23T01:24:53.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-23T01:24:53.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1\\Models\\Player.cs",
               "RelativeDocumentMoniker": "Models\\Player.cs",
               "ToolTip": "D:\\Github\\C-Backend1\\minimalAPILesson1\\Models\\Player.cs",
               "RelativeToolTip": "Models\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T02:49:35.084Z"
+              "WhenOpened": "2026-10-12T02:49:35.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "PlayerIntegrationTests.cs",
+              "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1.Tests\\PlayerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "..\\minimalAPILesson1.Tests\\PlayerIntegrationTests.cs",
+              "ToolTip": "D:\\Github\\C-Backend1\\minimalAPILesson1.Tests\\PlayerIntegrationTests.cs",
+              "RelativeToolTip": "..\\minimalAPILesson1.Tests\\PlayerIntegrationTests.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T12:18:54.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AppDBContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1\\Migrations\\AppDBContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\AppDBContextModelSnapshot.cs",
@@ -192,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1\\AppDBContext.cs",
               "RelativeDocumentMoniker": "AppDBContext.cs",
@@ -217,11 +199,10 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "TestTokenHelper.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1.Tests\\TestTokenHelper.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1.Tests\\TestTokenHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-22T08:06:19.045Z"
             },
@@ -239,27 +220,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "PlayerIntegrationTests.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1.Tests\\PlayerIntegrationTests.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1.Tests\\PlayerIntegrationTests.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-22T06:35:09.019Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "PlayerControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1.Tests\\PlayerControllerTests.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\C#Backend1\\minimalAPILesson1.Tests\\PlayerControllerTests.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIBJwFcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-17T12:36:57.859Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "DTOs.cs",
               "DocumentMoniker": "D:\\Github\\C-Backend1\\minimalAPILesson1\\DTO\\DTOs.cs",
               "RelativeDocumentMoniker": "DTO\\DTOs.cs",

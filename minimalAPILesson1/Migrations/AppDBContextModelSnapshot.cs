@@ -60,6 +60,10 @@ namespace minimalAPILesson1.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Year")
                         .HasColumnType("int");
 

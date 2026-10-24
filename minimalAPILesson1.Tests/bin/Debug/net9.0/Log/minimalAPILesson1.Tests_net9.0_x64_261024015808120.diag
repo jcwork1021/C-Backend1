@@ -1,0 +1,33 @@
+2026-10-24T01:58:08.1254706+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.5.1+0bf77e3aedbf86f1fa16220bc951d3b52ba56763
+2026-10-24T01:58:08.1262437+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-10-24T01:58:08.1271438+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-10-24T01:58:08.1271459+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 01:58:08.104
+2026-10-24T01:58:08.1274508+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 23772
+2026-10-24T01:58:08.1274688+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.18
+2026-10-24T01:58:08.1274809+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.18\System.Private.CoreLib.dll
+2026-10-24T01:58:08.1274869+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-10-24T01:58:08.1275240+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: D:\Github\C-Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\minimalAPILesson1.Tests.dll
+2026-10-24T01:58:08.1275281+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory D:\Github\C-Backend1\minimalAPILesson1.Tests\bin\Debug\net9.0\Log --results-directory D:\Github\C-Backend1\minimalAPILesson1\TestResults --client-port 54530'
+2026-10-24T01:58:08.1285507+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-10-24T01:58:08.1615501+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-10-24T01:58:08.1674571+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-10-24T01:58:08.3409203+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '4.0.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-10-24T01:58:08.3479795+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 9.0.18)
+2026-10-24T01:58:08.3809013+00:00 xUnit.net INFORMATION   Discovering: minimalAPILesson1.Tests
+2026-10-24T01:58:08.4077308+00:00 xUnit.net INFORMATION   Discovered:  minimalAPILesson1.Tests
+2026-10-24T01:58:08.4179799+00:00 xUnit.net INFORMATION   Starting:    minimalAPILesson1.Tests
+2026-10-24T01:58:09.2830904+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.CreatePlayer_WithValidData_ReturnsOk [FAIL]
+2026-10-24T01:58:09.2833375+00:00 xUnit.net INFORMATION       System.Net.Http.HttpRequestException : Response status code does not indicate success: 400 (Bad Request).
+2026-10-24T01:58:09.2835678+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-24T01:58:09.2838402+00:00 xUnit.net INFORMATION            at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+2026-10-24T01:58:09.2838580+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(41,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.CreatePlayer_WithValidData_ReturnsOk()
+2026-10-24T01:58:09.2838591+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T01:58:09.4647728+00:00 xUnit.net ERROR     minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.GetAllPlayers_WithGeneratedToken_ReturnsSuccessStatusCode [FAIL]
+2026-10-24T01:58:09.4647859+00:00 xUnit.net INFORMATION       System.Net.Http.HttpRequestException : Response status code does not indicate success: 404 (Not Found).
+2026-10-24T01:58:09.4648083+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-24T01:58:09.4648136+00:00 xUnit.net INFORMATION            at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+2026-10-24T01:58:09.4648226+00:00 xUnit.net INFORMATION         D:\Github\C-Backend1\minimalAPILesson1.Tests\PlayerIntegrationTests.cs(70,0): at minimalAPILesson1.Tests.IntegrationTests.PlayerIntegrationTests.GetAllPlayers_WithGeneratedToken_ReturnsSuccessStatusCode()
+2026-10-24T01:58:09.4648275+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-24T01:58:09.4762206+00:00 xUnit.net INFORMATION   Finished:    minimalAPILesson1.Tests (ID = 'f7f6d0be300ebdb38034696c18f89bce92558e879f63540227b42dc9a4847d22')
+2026-10-24T01:58:09.4791900+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-10-24T01:58:09.4825421+00:00 xUnit.net INFORMATION    minimalAPILesson1.Tests  Total: 3, Errors: 0, Failed: 2, Skipped: 0, Not Run: 0, Time: 1.060s

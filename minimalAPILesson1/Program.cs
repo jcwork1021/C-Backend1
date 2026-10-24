@@ -208,6 +208,13 @@ app.MapDelete("/api/player/MapDeletePlayer/{playerID}", async (AppDBContext cont
 });
 
 
+// Automatically apply pending EF Core migrations on startup
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDBContext>();
+    dbContext.Database.Migrate();
+}
+
 app.Run();
 
 public partial class Program { }

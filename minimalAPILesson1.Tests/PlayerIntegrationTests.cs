@@ -17,6 +17,32 @@ namespace minimalAPILesson1.Tests.IntegrationTests
         }
 
         [Fact]
+        public async Task CreatePlayer_WithValidData_ReturnsOk()
+        {
+            // 1. Arrange: Create the object you want to send
+            var newPlayer = new Player
+            {
+                Name = "TestHero25",
+                Username = "TestHero",
+                Email = "hero@test25.com",
+                Password = "SecurePassword123"
+            };
+
+            // Serialize the C# object into a JSON string content
+            var jsonContent = new StringContent(
+                JsonSerializer.Serialize(newPlayer),
+                Encoding.UTF8,
+                "application/json"
+            );
+
+            // 2. Act: Send a virtual POST request to your endpoint
+            var response = await _client.PostAsync("/api/player/CreatePlayer", jsonContent, TestContext.Current.CancellationToken);
+
+            // 3. Assert: Verify the response code
+            response.EnsureSuccessStatusCode(); // Expects 200 OK
+        }
+
+        [Fact]
         public async Task GetAllPlayers_WithoutToken_ReturnsUnauthorized()
         {
             // Act: Send request without a token
@@ -43,31 +69,6 @@ namespace minimalAPILesson1.Tests.IntegrationTests
             // 3. Act & Assert
             var response = await _client.GetAsync("/api/player/GetAllPlayers", TestContext.Current.CancellationToken);
             response.EnsureSuccessStatusCode(); // Will pass with 200 OK
-        }
-
-        [Fact]
-        public async Task CreatePlayer_WithValidData_ReturnsOk()
-        {
-            // 1. Arrange: Create the object you want to send
-            var newPlayer = new Player
-            {
-                Name = "TestHero25",
-                Email = "hero@test25.com",
-                Password = "SecurePassword123"
-            };
-
-            // Serialize the C# object into a JSON string content
-            var jsonContent = new StringContent(
-                JsonSerializer.Serialize(newPlayer),
-                Encoding.UTF8,
-                "application/json"
-            );
-
-            // 2. Act: Send a virtual POST request to your endpoint
-            var response = await _client.PostAsync("/api/player/CreatePlayer", jsonContent, TestContext.Current.CancellationToken);
-
-            // 3. Assert: Verify the response code
-            response.EnsureSuccessStatusCode(); // Expects 200 OK
         }
     }
 }
